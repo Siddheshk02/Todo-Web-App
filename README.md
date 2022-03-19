@@ -1,1 +1,1 @@
-# Todo-Web-App-using-Golang-and-PostgreSQL-db
+# Todo Web App using Golang with Fiber and PostgreSQL db
