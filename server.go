@@ -22,7 +22,8 @@ func indexHandler(c *fiber.Ctx, db *sql.DB) error {
 
 	var todos []string //for storing all the rows
 
-	rows, err := db.Query("SELECT * FROM todos")
+	rows, err := db.Query("SELECT * FROM todos") // db.Query is used when we expect a result from the database query
+                                                     // db.Exec is used when no result id expected from  the database query
 
 	defer rows.Close() //closing the rows to prevent further enumeration when the function completes
 
