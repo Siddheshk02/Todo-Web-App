@@ -12,9 +12,9 @@ import (
 )
 
 const (
-	DB_USER     = "postgres"
-	DB_PASSWORD = "Sid@2002"
-	DB_NAME     = "todolist"
+	DB_USER     = "_USER_"
+	DB_PASSWORD = "_PASSWORD_"
+	DB_NAME     = "_NAME_"
 )
 
 func indexHandler(c *fiber.Ctx, db *sql.DB) error {
