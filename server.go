@@ -102,7 +102,7 @@ func main() {
 		return deleteHandler(c, db)
 	})
 
-	app.Static("/", "./public")
+	app.Static("/frontend", "./public")
 
 	log.Fatal(app.Listen(":8080"))
 }
